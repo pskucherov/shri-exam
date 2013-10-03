@@ -1,5 +1,6 @@
 ({
     block: 'b-page',
+    attrs: { 'ng-app': 'graduation-album'},
     title: 'Title of the page',
     favicon: '/favicon.ico',
     head: [
@@ -11,14 +12,24 @@
         {
             block: 'header',
             content: [
-                'header content goes here'
+                {
+                    block: 'b-up-link',
+                    content: { block: 'b-link', url: 'index.html', content: 'Главная' }
+                },
+                {
+                    block: 'b-up-link',
+                    content: { block: 'b-link', url: '#/graduates', content: 'Выпускники' }
+                },
+                {
+                    block: 'b-up-link',
+                    content: { block: 'b-link', url: '#/lecturers', content: 'Лекторы' }
+                }
             ]
         },
         {
             block: 'content',
-            content: [
-                'main content'
-            ]
+            attrs: { 'ng-view': '' },
+            content: 'Главная страница'
         },
         {
             block: 'footer',
@@ -27,6 +38,13 @@
             ]
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
+        {
+            block: 'angularjs',
+            content: [
+                { elem: 'app' },
+                { elem: 'controllers' }
+            ]
+        },
         { elem: 'js', url: '_index.js' }
     ]
 })

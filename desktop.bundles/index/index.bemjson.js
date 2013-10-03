@@ -1,7 +1,7 @@
 ({
     block: 'b-page',
     attrs: { 'ng-app': 'graduation-album'},
-    title: 'Title of the page',
+    title: 'Выпускной альбом',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
@@ -10,7 +10,10 @@
     ],
     content:[
         {
-            block: 'header',
+            block: 'header'
+        },
+        {
+            block: 'links',
             content: [
                 {
                     block: 'b-up-link',

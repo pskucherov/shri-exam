@@ -1,0 +1,11 @@
+.b-link_type_arrowlink:link {
+    color: #000;
+}
+
+.b-link_type_arrowlink:visited {
+    color: #000;
+}
+
+.b-link_type_arrowlink:hover {
+    color: #FF0000;
+}

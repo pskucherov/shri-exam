@@ -15,18 +15,9 @@ block arrow {
                         mix: [ { block: 'arrow' }],
                         content: [
                             {
-                            block: 'arrow',
-                            elem: 'name',
-                            content: 'Школа разработки интерфейсов'
-                            },
-                            {
                                 block: 'arrow',
-                                elem: 'corner',
-                                content: {
-                                    block: 'arrow',
-                                    elem: 'triangle',
-                                    mods: { 'mod': 'inside' }
-                                }
+                                elem: 'name',
+                                content: 'Школа разработки интерфейсов'
                             }
                         ]
                     }

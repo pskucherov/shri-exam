@@ -19,7 +19,36 @@ block header {
             mods: { 'pad': 'left' }
         },
         {
-            elem: 'line'
+            block: 'b-menu-horiz',
+            mods: { layout: 'normal' },
+            js: false,
+            content: [
+                {
+                    elem: 'item',
+                    elemMods: { state: 'current' },
+                    content: {
+                        block: 'b-link',
+                        url: 'index.html',
+                        content: 'О школе'
+                    }
+                },
+                {
+                    elem: 'item',
+                    content: {
+                        block: 'b-link',
+                        url: '#/graduates',
+                        content: 'Выпускники'
+                    }
+                },
+                {
+                    elem: 'item',
+                    content: {
+                        block: 'b-link',
+                        url: '#/lecturers',
+                        content: 'Лекторы'
+                    }
+                }
+            ]
         }
     ]
 

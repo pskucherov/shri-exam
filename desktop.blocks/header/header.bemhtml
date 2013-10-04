@@ -24,27 +24,30 @@ block header {
             js: true,
             content: [
                 {
-                    elem: 'item',
-                    elemMods: { state: 'current' },
+                    block: 'b-link',
+                    url: 'index.html',
                     content: {
-                        block: 'b-link',
-                        url: 'index.html',
+                        block: 'b-menu-horiz',
+                        elem: 'item',
+                        elemMods: { state: 'current' },
                         content: 'О школе'
                     }
                 },
                 {
-                    elem: 'item',
+                    block: 'b-link',
+                    url: '#/graduates',
                     content: {
-                        block: 'b-link',
-                        url: '#/graduates',
+                        block: 'b-menu-horiz',
+                        elem: 'item',
                         content: 'Выпускники'
                     }
                 },
                 {
-                    elem: 'item',
+                    block: 'b-link',
+                    url: '#/lecturers',
                     content: {
-                        block: 'b-link',
-                        url: '#/lecturers',
+                        block: 'b-menu-horiz',
+                        elem: 'item',
                         content: 'Лекторы'
                     }
                 }

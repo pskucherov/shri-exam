@@ -1,0 +1,13 @@
+:link {
+    color: #1a3dc1
+}
+
+:link:hover, :visited:hover {
+    color: red !important
+}
+
+.b-link
+{
+    color: #1a3dc1;
+    text-decoration: none;
+}

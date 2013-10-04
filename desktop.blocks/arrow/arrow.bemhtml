@@ -1,0 +1,34 @@
+block arrow {
+    content: {
+        elem: 'yellowborder',
+        content:
+        [
+            {
+                block: 'b-link',
+                url: 'http://yandex.ru',
+                mods: { 'type': 'arrowlink' },
+                content:
+                [
+                    {
+                        block: 'arrow',
+                        elem : 'inside',
+                        mix: [ { block: 'arrow' }],
+                        content: [
+                            {
+                                block: 'arrow',
+                                elem: 'name',
+                                content: 'Школа разработки интерфейсов'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                elem: 'corner',
+                content: {
+                    elem: 'triangle'
+                }
+            }
+        ]
+    }
+}

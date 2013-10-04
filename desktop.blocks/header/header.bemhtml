@@ -21,7 +21,7 @@ block header {
         {
             block: 'b-menu-horiz',
             mods: { layout: 'normal' },
-            js: false,
+            js: true,
             content: [
                 {
                     elem: 'item',

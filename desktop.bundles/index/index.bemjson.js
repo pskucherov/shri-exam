@@ -8,37 +8,29 @@
         { elem: 'css', url: '_index', ie: true },
         { elem: 'meta', attrs: { name: 'description', content: '' }}
     ],
-    content:[
+    content: [
         {
-            block: 'header'
-        },
-        {
-            block: 'links',
+            block: 'wrapper',
             content: [
                 {
-                    block: 'b-up-link',
-                    content: { block: 'b-link', url: 'index.html', content: 'Главная' }
+                    block: 'header'
                 },
                 {
-                    block: 'b-up-link',
-                    content: { block: 'b-link', url: '#/graduates', content: 'Выпускники' }
+                    block: 'content',
+                    attrs: { 'ng-view': '' }
                 },
                 {
-                    block: 'b-up-link',
-                    content: { block: 'b-link', url: '#/lecturers', content: 'Лекторы' }
+                    block: 'footer',
+                    elem: 'empty'
                 }
             ]
         },
         {
-            block: 'content',
-            attrs: { 'ng-view': '' },
-            content: 'Главная страница'
-        },
-        {
             block: 'footer',
-            content: [
-                'footer content goes here'
-            ]
+            content: {
+                elem: 'content',
+                content: 'footer content goes here'
+            }
         },
         { block: 'i-jquery', mods: { version: '1.8.3' } },
         {

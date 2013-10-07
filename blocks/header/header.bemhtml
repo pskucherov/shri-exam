@@ -25,7 +25,7 @@ block header {
             content: [
                 {
                     block: 'b-link',
-                    url: '#shri',
+                    url: '/',
                     content: {
                         block: 'b-menu-horiz',
                         elem: 'item',
@@ -35,7 +35,7 @@ block header {
                 },
                 {
                     block: 'b-link',
-                    url: '#/graduates',
+                    url: '/graduates',
                     content: {
                         block: 'b-menu-horiz',
                         elem: 'item',
@@ -44,7 +44,7 @@ block header {
                 },
                 {
                     block: 'b-link',
-                    url: '#/lecturers',
+                    url: '/lecturers',
                     content: {
                         block: 'b-menu-horiz',
                         elem: 'item',

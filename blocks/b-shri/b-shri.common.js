@@ -11,6 +11,10 @@ BEM.JSON.decl({name: 'b-shri'}, {
 
                     ctx.content([
                         {
+                            block: 'b-bread-crumbs',
+                            content: result.name
+                        },
+                        {
                             block: 'b-title',
                             content: result.name
                         },

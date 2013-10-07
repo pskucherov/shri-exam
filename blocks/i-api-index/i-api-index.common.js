@@ -5,25 +5,11 @@ BEM.decl({block: 'i-api-index'}, null, {
             .get('index.json')
             .then(function (result) {
                 /**
-                 * @see http://nodejs.org/api/index.json
+                 * @see http://t1.kiev.ua/json/index.json
                  */
-                return result.desc.map(function (elem) {
-                    var match;
-
-                    if (!elem.text) {
-                        return false;
-                    }
-
-                    // [About these Docs](documentation.html) to {text: 'About these Docs', url: 'documentation.html'}
-                    match = elem.text.split('](');
-                    return {
-                        text: match[0].slice(1),
-                        url: match[1].slice(0, -6)
-                    }
-
-                }).filter(Boolean);
+                return result;
             });
-    },
+    }/*,
 
     module: function (name) {
         return BEM.blocks['i-api-request']
@@ -38,5 +24,5 @@ BEM.decl({block: 'i-api-index'}, null, {
 
                 return Vow.reject('No module');
             });
-    }
+    }*/
 });

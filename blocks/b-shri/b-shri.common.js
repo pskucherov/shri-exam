@@ -9,24 +9,12 @@ BEM.JSON.decl({name: 'b-shri'}, {
 
                     ctx.content([
                         {
+                            block: 'b-title',
+                            content: result.name
+                        },
+                        {
                             block: 'b-wrapper-content',
-                            content: [
-                                {elem: 'title', tag: 'h4', content: 'Table of Contents'},
-                                {
-                                    elem: 'toc',
-                                    tag: 'ul',
-                                    content: result.map(function (elem) {
-                                        return {
-                                            tag: 'li',
-                                            content: {
-                                                block: 'b-link',
-                                                content: elem.text,
-                                                url: elem.url
-                                            }
-                                        }
-                                    })
-                                }
-                            ]
+                            content: result.text
                         }
                     ]);
 

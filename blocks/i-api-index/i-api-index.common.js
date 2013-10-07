@@ -1,4 +1,4 @@
-BEM.decl({block: 'i-api-doc'}, null, {
+BEM.decl({block: 'i-api-index'}, null, {
 
     index: function () {
         return BEM.blocks['i-api-request']

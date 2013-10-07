@@ -7,6 +7,8 @@ BEM.JSON.decl({name: 'b-shri'}, {
             BEM.blocks['i-api-index'].index()
                 .then(function (result) {
 
+                    BEM.blocks['i-page'].setTitle(result.name);
+
                     ctx.content([
                         {
                             block: 'b-title',

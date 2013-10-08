@@ -19,7 +19,7 @@ BEM.decl('i-page', null, {
                             block: 'header'
                         },
                         {
-                            block: 'content',
+                            block: 'b-content',
                             content: json
                         },
                         {
@@ -38,8 +38,5 @@ BEM.decl('i-page', null, {
                 { block: 'i-jquery', mods: { version: '1.8.3' } }
             ]
         }
-	
-
-
     }
 });

@@ -1,5 +1,6 @@
 ({
     shouldDeps: [
-        {block: 'i-api-request'}
+        {block: 'i-api-request'},
+        { block: 'b-content' }
     ]
 })

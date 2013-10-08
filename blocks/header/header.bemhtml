@@ -44,11 +44,11 @@ block header {
                 },
                 {
                     block: 'b-link',
-                    url: '/lecturers',
+                    url: '/lectures',
                     content: {
                         block: 'b-menu-horiz',
                         elem: 'item',
-                        content: 'Лекторы'
+                        content: 'Лекции'
                     }
                 }
             ]

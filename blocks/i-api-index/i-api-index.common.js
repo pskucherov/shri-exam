@@ -1,6 +1,11 @@
 BEM.decl({block: 'i-api-index'}, null, {
 
     index: function () {
+
+        if (typeof BEM.blocks['b-content'] !== 'undefined') {
+            BEM.blocks['b-content'].setWait();
+        }
+
         return BEM.blocks['i-api-request']
             .get('index.json')
             .then(function (result) {
@@ -9,20 +14,22 @@ BEM.decl({block: 'i-api-index'}, null, {
                  */
                 return result;
             });
-    }/*,
+    },
 
-    module: function (name) {
+    lectures: function () {
+
+        if (typeof BEM.blocks['b-content'] !== 'undefined') {
+            BEM.blocks['b-content'].setWait();
+        }
+
         return BEM.blocks['i-api-request']
-            .get(name + '.json')
-            .then(function (result) {
-
-                if (result.modules && result.modules.length) {
-                    return result.modules[0];
-                } else if (result.globals && result.globals.length) {
-                    return result.globals[0];
-                }
-
-                return Vow.reject('No module');
+            .get( 'lectures.json' )
+            .then(function (result1) {
+                return BEM.blocks['i-api-request'].get('lecturers.json').then(function(result2) {
+                    return { lectures: result1, lecturers: result2 };
+                });
             });
-    }*/
+    }
+
+
 });

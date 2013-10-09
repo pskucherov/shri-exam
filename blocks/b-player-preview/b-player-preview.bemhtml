@@ -1,0 +1,13 @@
+block b-player-preview {
+
+    content: [
+        {
+            tag: 'img',
+            attrs: { src: 'http://static.video.yandex.ru/get/ya-events/' + this.ctx.hash + '/120x72.jpg' }
+        },
+        {
+            elem: 'background'
+        }
+    ]
+
+}

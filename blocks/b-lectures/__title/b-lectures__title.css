@@ -1,0 +1,8 @@
+.b-lectures__title
+{
+    font-size: 20px;
+}
+
+.b-lectures__title :link {
+    color: #1A3DC1;
+}

@@ -4,16 +4,14 @@ BEM.JSON.decl({name: 'b-shri'}, {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].index()
+            BEM.blocks['i-api-index'].index(ctx.param('page'))
                 .then(function (result) {
 
-                    BEM.blocks['i-page'].setTitle(result.name);
-
                     ctx.content([
-                        {
+                        /*{
                             block: 'b-bread-crumbs',
                             content: result.name
-                        },
+                        },*/
                         {
                             block: 'b-title',
                             content: result.name

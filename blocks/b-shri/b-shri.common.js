@@ -4,7 +4,7 @@ BEM.JSON.decl({name: 'b-shri'}, {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].index()
+            BEM.blocks['i-api-index'].index(ctx.param('page'))
                 .then(function (result) {
 
                     ctx.content([

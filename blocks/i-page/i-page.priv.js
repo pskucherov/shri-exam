@@ -16,7 +16,12 @@ BEM.decl('i-page', null, {
                     block: 'wrapper',
                     content: [
                         {
-                            block: 'header'
+                            block: 'header',
+                            links: [
+                                { link: '/', content: 'О школе' },
+                                { link: 'graduates', content: 'Выпускники' },
+                                { link: 'lectures', content: 'Лекции' }
+                            ]
                         },
                         {
                             block: 'b-content',

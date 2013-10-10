@@ -1,4 +1,4 @@
-BEM.blocks['i-router'].define(/\/lectures/([^\/]+)$/, 'i-page-lecture');
+BEM.blocks['i-router'].define(/\/lectures\/([^\/]+)$/, 'i-page-lecture');
 BEM.decl({block: 'i-page-lecture', baseBlock: 'i-page'}, null, {
 
     init: function (matchers) {

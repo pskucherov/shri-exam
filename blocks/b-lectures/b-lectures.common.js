@@ -43,7 +43,7 @@ BEM.JSON.decl({name: 'b-lectures'}, {
                                                 {
                                                     block: 'b-lectures',
                                                     elem: 'avatara',
-                                                    hash: lecturers[lectures['lector-id']].photo
+                                                    hash: lecturers[lectures['lector-id']].photo + '/45x45'
                                                 },
                                                 {
                                                     elem: 'lecturer',

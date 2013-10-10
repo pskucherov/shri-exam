@@ -1,0 +1,9 @@
+block b-lecture {
+
+    elem videoframe {
+
+        tag: 'iframe',
+        attrs: { src: 'http://video.yandex.ru/iframe/ya-events/' + this.ctx.hash + '/?player-type=custom&show-info=false&show-logo=false&hd=1', frameborder: 0  }
+
+    }
+}

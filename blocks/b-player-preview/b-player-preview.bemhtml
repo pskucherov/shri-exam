@@ -7,6 +7,9 @@ block b-player-preview {
         },
         {
             elem: 'background'
+        },
+        {
+            elem: 'play'
         }
     ]
 

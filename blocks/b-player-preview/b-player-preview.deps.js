@@ -1,5 +1,5 @@
 ({
     shouldDeps : [
-        { elems: ['background'] }
+        { elems: ['background', 'play'] }
     ]
 })

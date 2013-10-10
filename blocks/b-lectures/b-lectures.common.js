@@ -9,13 +9,22 @@ BEM.JSON.decl({name: 'b-lectures'}, {
                     var i
                         , content = []
                         , lectures
-                        , lecturers = result.lecturers;
+                        , lecturers = result.lecturers
+                        , preview = {};
 
                     BEM.blocks['i-page'].setTitle('Лекции');
 
                     for ( i in result.lectures ) {
 
+                        preview = {};
                         lectures = result.lectures[i];
+
+                        if ( lectures['frame-video'].length ) {
+                            preview = {
+                                block: 'b-player-preview',
+                                hash: lectures['frame-video']
+                            };
+                        }
 
                         content.push({
                             block: 'b-wrapper-content',
@@ -27,10 +36,9 @@ BEM.JSON.decl({name: 'b-lectures'}, {
                                     block: 'b-wrapper-content',
                                     mix: [ { block: 'b-lectures', elem: 'curshover' } ],
                                     content: [
-                                        {
-                                            block: 'b-player-preview',
-                                            hash: lectures['frame-video']
-                                        },
+
+                                        preview,
+
                                         {
                                             block: 'b-lectures',
                                             elem: 'title',

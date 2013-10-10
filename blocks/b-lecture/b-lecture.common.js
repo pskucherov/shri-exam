@@ -36,30 +36,29 @@ BEM.JSON.decl({name: 'b-lecture'}, {
 
                     if (lecture['frame-video'].length) {
                         existingBlocks.push({
+                            block: 'b-lecture',
+                            elem: 'videoframe',
+                            hash: lecture['frame-video']
+                        });
+                        existingBlocks.push({
                             block: 'b-link',
                             mix: [ {block: 'b-lecture', elem: 'disp' } ],
                             url: lecture['video-download-url'],
                             content: 'Скачать видео ' + lecture['video-size']
                         });
-
-                        existingBlocks.push({
-                            block: 'b-lecture',
-                            elem: 'videoframe',
-                            hash: lecture['frame-video']
-                        });
                     }
 
                     if (lecture['frame-pdf']) {
+                        existingBlocks.push({
+                            block: 'b-lecture',
+                                elem: 'pdfframe',
+                            id: lecture['frame-pdf']
+                        });
                         existingBlocks.push({
                             block: 'b-link',
                             mix: [ {block: 'b-lecture', elem: 'disp' } ],
                             url: lecture['pdf-download-url'],
                             content: 'Скачать презентацию в .pdf'
-                        });
-                        existingBlocks.push({
-                            block: 'b-lecture',
-                                elem: 'pdfframe',
-                            id: lecture['frame-pdf']
                         });
                     }
 

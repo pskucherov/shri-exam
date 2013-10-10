@@ -1,0 +1,9 @@
+block b-lecture {
+
+    elem pdfframe {
+
+        tag: 'iframe',
+        attrs: { src: 'http://www.slideshare.net/slideshow/embed_code/' + this.ctx.id, frameborder: 0  }
+
+    }
+}

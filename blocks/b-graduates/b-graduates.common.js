@@ -18,11 +18,6 @@ BEM.JSON.decl({name: 'b-graduates'}, {
 
                         graduate = result[i];
 
-                        graduate.about = graduate.about.replace(/\\n/g, ' ');
-                        if (graduate.about.length > 255) {
-                            graduate.about = graduate.about.substr(0, 255) + '...';
-                        }
-
                         content.push({
                             block: 'b-wrapper-content',
                             elem: 'divlink',
@@ -45,6 +40,7 @@ BEM.JSON.decl({name: 'b-graduates'}, {
                                             },
                                             {
                                                 block: 'b-social',
+                                                elem: 'style',
                                                 items: {
                                                     "link_facebook": graduate.link_facebook,
                                                        "link_gihub": graduate.link_gihub,

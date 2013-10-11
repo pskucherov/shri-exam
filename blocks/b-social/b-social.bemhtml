@@ -1,52 +1,56 @@
 block b-social {
 
-    content: {
+    elem style {
 
-        var content = []
-            , k
-            , link
-            , icoExist;
+        content: {
 
-        for (k in this.ctx.items) {
-            link = this.ctx.items[k];
-            if (link.length <= 5) {
-                link = '';
-            } else if ( link.substr(0, 4) !== 'http' ) {
-                link = 'http://' + link;
-            }
+            var content = []
+                , k
+                , link
+                , icoExist;
 
-            if (link.length) {
-
-                icoExist = false;
-                switch (k) {
-                    case 'link_yaru':
-                    case 'link_gihub':
-                    case 'link_vk':
-                    case 'link_facebook':
-                        icoExist = true;
+            for (k in this.ctx.items) {
+                link = this.ctx.items[k];
+                if (link.length <= 5) {
+                    link = '';
+                } else if ( link.substr(0, 4) !== 'http' ) {
+                    link = 'http://' + link;
                 }
 
-                if (icoExist) {
+                if (link.length) {
 
-                    content.push({
-                        elem: 'icons',
-                            content: {
-                            block: 'b-link',
-                            attrs: { target: '_blank' },
-                            url: link,
-                            content: {
-                                tag: 'img',
-                                attrs: { src: '/blocks/b-social/icons/' + k + '.png' }
+                    icoExist = false;
+                    switch (k) {
+                        case 'link_yaru':
+                        case 'link_gihub':
+                        case 'link_vk':
+                        case 'link_facebook':
+                            icoExist = true;
+                    }
+
+                    if (icoExist) {
+
+                        content.push({
+                            elem: 'icons',
+                                content: {
+                                block: 'b-link',
+                                attrs: { target: '_blank' },
+                                url: link,
+                                content: {
+                                    tag: 'img',
+                                    attrs: { src: '/blocks/b-social/icons/' + k + '.png' }
+                                }
                             }
-                        }
-                    });
+                        });
 
+                    }
                 }
+
             }
+
+            return content;
 
         }
-
-        return content;
     }
 
 }

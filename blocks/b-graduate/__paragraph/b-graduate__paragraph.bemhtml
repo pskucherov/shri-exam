@@ -1,0 +1,6 @@
+block b-graduate {
+    elem paragraph {
+        tag: 'p',
+        content: this.ctx.content
+    }
+}

@@ -1,0 +1,16 @@
+block b-graduates {
+    elem shortabout {
+
+        content: {
+
+            var text = this.ctx.content;
+            text = text.replace(/\\n/g, ' ');
+            if (text.length > 255) {
+                text = text.substr(0, 255) + '...';
+            }
+
+            return text;
+        }
+
+    }
+}

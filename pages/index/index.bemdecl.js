@@ -11,8 +11,8 @@ exports.blocks = [
     { block: 'i-page-lectures' },
     { block: 'i-page-lecture' },
 
-    { block: 'i-page-graduates' }
-
+    { block: 'i-page-graduates' },
+    { block: 'i-page-graduate' }
 
 
 ]

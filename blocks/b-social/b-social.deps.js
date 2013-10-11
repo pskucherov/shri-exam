@@ -1,6 +1,7 @@
 ({
     shouldDeps : [
         { block: 'b-link' },
-        { elems: [ 'icons' ] }
+        { elems: [ 'icons', 'style' ] },
+        { elem: 'style', mods: { pad: 'right'  } }
     ]
 })

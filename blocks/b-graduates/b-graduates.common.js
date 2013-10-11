@@ -27,30 +27,44 @@ BEM.JSON.decl({name: 'b-graduates'}, {
                             block: 'b-wrapper-content',
                             elem: 'divlink',
                             content: {
-                                block: 'b-link',
-                                url: '/graduates/' + i,
-                                content: {
-                                    block: 'b-wrapper-content',
-                                    mix: [ { block: 'b-lectures', elem: 'curshover' } ],
-                                    content: [
 
-                                        {
-                                            block: 'b-lectures',
-                                            elem: 'title',
-                                            content: graduate.name + ', г. ' + graduate.city
-                                        },
-                                        {
-                                            block: 'b-graduates',
-                                            elem: 'avatara',
-                                            photo: 'small_' + graduate['link_photo']
-                                        },
-                                        {
-                                            block: 'b-graduates',
-                                            elem: 'shortabout',
-                                            content: graduate.about
-                                        }
-                                    ]
-                                }
+                                block: 'b-wrapper-content',
+                                mix: [ { block: 'b-lectures', elem: 'curshover' } ],
+                                content: [
+                                    {
+                                        elem: 'title',
+                                        content: [
+                                            {
+                                                block: 'b-graduates',
+                                                elem: 'title',
+                                                content: {
+                                                    block: 'b-link',
+                                                    url: '/graduates/' + i,
+                                                    content: graduate.name + ', г. ' + graduate.city
+                                                }
+                                            },
+                                            {
+                                                block: 'b-social',
+                                                items: {
+                                                    "link_facebook": graduate.link_facebook,
+                                                       "link_gihub": graduate.link_gihub,
+                                                        "link_yaru": graduate.link_yaru,
+                                                          "link_vk": graduate.link_vk
+                                                }
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        block: 'b-graduates',
+                                        elem: 'avatara',
+                                        photo: 'small_' + graduate['link_photo']
+                                    },
+                                    {
+                                        block: 'b-graduates',
+                                        elem: 'shortabout',
+                                        content: graduate.about
+                                    }
+                                ]
                             }
                         });
                     }

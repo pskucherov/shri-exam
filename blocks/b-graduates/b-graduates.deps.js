@@ -1,6 +1,7 @@
 ({
     shouldDeps: [
         { block: 'i-api-index' },
-        { elems: [ 'avatara', 'shortabout' ] }
+        { block: 'b-social' },
+        { elems: [ 'avatara', 'shortabout', 'title' ] }
     ]
 })

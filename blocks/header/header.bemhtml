@@ -12,13 +12,9 @@ block header {
         this.ctx.links.forEach(function(e) {
 
             state = {};
-            if (e.link === '/' && link === '/') {
+            re = new RegExp('^\/' + e.link + '\/?.*','i');
+            if ( (e.link === '/' && link === '/') || re.test(link)) {
                 state = { state: 'current' };
-            } else {
-                re = new RegExp('^\/' + e.link + '\/?.*','i');
-                if (re.test(link)) {
-                    state = { state: 'current' };
-                }
             }
 
             if (e.link !== '/') {

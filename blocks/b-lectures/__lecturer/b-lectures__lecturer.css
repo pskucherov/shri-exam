@@ -1,0 +1,11 @@
+.b-lectures__lecturer
+{
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+}
+
+.b-lectures__lecturer:first-letter
+{
+    color: red;
+}

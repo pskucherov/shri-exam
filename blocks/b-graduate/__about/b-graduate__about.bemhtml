@@ -1,0 +1,30 @@
+block b-graduate {
+    elem about {
+
+        content: {
+
+            var text = this.ctx.content
+                , i
+                , j
+                , buf
+                , blocks = [];
+
+            text = text.replace(/\\n[\s]*\\n/g, '<!--n-->');
+            text = text.split("<!--n-->");
+
+            for (i = 0; i < text.length; i++) {
+                buf = text[i].split("\\n");
+                for (j = 0; j < buf.length; j++) {
+                    blocks.push({
+                        block: 'b-graduate',
+                        elem: 'paragraph',
+                        content: buf[j]
+                    });
+                }
+            }
+
+            return blocks;
+        }
+
+    }
+}

@@ -1,0 +1,9 @@
+block b-lectures {
+
+    elem avatara {
+
+        tag: 'img',
+        attrs: { src: 'http://avatars.yandex.net/get-yaevents/' + this.ctx.hash }
+       // attrs: { style: "background-image: url('http://avatars.yandex.net/get-yaevents/" + this.ctx.hash + "/45x45')" }
+    }
+}

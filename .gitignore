@@ -1,0 +1,11 @@
+
+*pages/*/*.*
+!pages/*/*.bemdecl.js
+
+
+node_modules
+.bem/cache
+.idea
+*.bundles/*/*.*
+!*.bundles/*/*.bemjson.js
+!*.bundles/.bem/*

@@ -1,0 +1,19 @@
+.b-lectures__avatara
+{
+    display: inline-block;
+
+    vertical-align: middle;
+
+    margin-right: 10px;
+
+    /*
+    background-image: url("//yandex.st/yandex-tech-www/_/UXmK-HccUpp-rm2Mj2iYnpRli5s.png");
+    /*border-radius: 50% 50% 50% 50%;*/
+    /*
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*box-shadow: 0 1px 0 1.2px rgba(0, 0, 0, 0.2) inset;*/
+
+
+}

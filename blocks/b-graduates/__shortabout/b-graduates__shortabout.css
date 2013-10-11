@@ -1,0 +1,12 @@
+.b-graduates__shortabout
+{
+    padding-top: 10px;
+
+    height: 80px;
+
+    overflow: hidden;
+
+    color: #000;
+
+    text-align: justify;
+}

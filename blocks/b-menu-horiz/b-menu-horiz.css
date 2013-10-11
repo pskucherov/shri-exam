@@ -1,0 +1,36 @@
+.b-menu-horiz
+{
+    background: #fff;
+    border-bottom: solid 1px #d1d0cf;
+    border-top: solid 1px #d1d0cf;
+}
+
+.b-menu-horiz__item
+{
+    height: 25px;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.b-menu-horiz__item_state_current
+{
+    border-top: solid 2px #000;
+    color: #000;
+}
+
+
+.b-menu-horiz__item_state_current .b-link:visited {
+    color: #000
+}
+
+.b-menu-horiz__item_state_current .b-link:link {
+    color: #000
+}
+
+.b-menu-horiz_type_main .b-link:visited {
+    color: #2010d0
+}
+
+.b-menu-horiz_type_main .b-link:visited {
+    color: #2010d0
+}

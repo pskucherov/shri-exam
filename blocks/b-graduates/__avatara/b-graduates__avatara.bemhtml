@@ -1,0 +1,9 @@
+block b-graduates {
+
+    elem avatara {
+
+        tag: 'img',
+        attrs: { src: '/blocks/b-graduates/photos/' + this.ctx.photo }
+
+    }
+}

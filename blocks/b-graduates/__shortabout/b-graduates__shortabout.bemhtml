@@ -1,0 +1,34 @@
+block b-graduates {
+    elem shortabout {
+
+        content: {
+
+            var text = this.ctx.content
+                , readmore;
+
+
+            text = text.replace(/\\n/g, ' ');
+            if (text.length > 255) {
+                text = text.substr(0, 255) + '...';
+
+                return {
+                    content: [
+                        text,
+                        {
+                            block: 'b-graduates',
+                            elem: 'readmore',
+                            content: {
+                                block: 'b-link',
+                                url: this.ctx.url,
+                                content: 'Читать далее...'
+                            }
+                        }
+                    ]
+                }
+            }
+
+            return text;
+        }
+
+    }
+}

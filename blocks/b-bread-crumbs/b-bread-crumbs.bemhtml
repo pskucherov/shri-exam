@@ -1,0 +1,6 @@
+block b-bread-crumbs {
+
+    content: [
+        'Выпускной альбом -> ' + this.ctx.content
+    ]
+}

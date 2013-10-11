@@ -29,6 +29,19 @@ BEM.decl({block: 'i-api-index'}, null, {
                     return { lectures: result1, lecturers: result2 };
                 });
             });
+    },
+
+    graduates: function () {
+
+
+        if (typeof BEM.blocks['b-content'] !== 'undefined') {
+            BEM.blocks['b-content'].setWait();
+        }
+
+        return BEM.blocks['i-api-request'].get('graduates.json').then(function(result) {
+            return result;
+        });
+
     }
 
 

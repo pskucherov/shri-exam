@@ -1,0 +1,10 @@
+.b-graduates__title
+{
+    font-size: 20px;
+
+    display: inline-block;
+}
+
+.b-graduates__title :link {
+    color: #1A3DC1;
+}

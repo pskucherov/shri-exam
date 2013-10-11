@@ -58,6 +58,7 @@ BEM.JSON.decl({name: 'b-graduates'}, {
                                     {
                                         block: 'b-graduates',
                                         elem: 'shortabout',
+                                        url: '/graduates/' + i,
                                         content: graduate.about
                                     }
                                 ]

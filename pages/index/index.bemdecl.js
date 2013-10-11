@@ -7,9 +7,12 @@ exports.blocks = [
     {block: 'i-ycssjs'},
 
     // user part
-    {block: 'i-page-home'},
+    { block: 'i-page-home' },
     { block: 'i-page-lectures' },
-    { block: 'i-page-lecture' }
+    { block: 'i-page-lecture' },
+
+    { block: 'i-page-graduates' }
+
 
 
 ]

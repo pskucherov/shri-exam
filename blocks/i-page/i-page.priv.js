@@ -37,7 +37,14 @@ BEM.decl('i-page', null, {
                     block: 'footer',
                     content: {
                         elem: 'content',
-                        content: 'footer content goes here'
+                        content: [
+                            'Автор: ',
+                            {
+                                block: 'b-link',
+                                url: '/graduates/pavel-kucherov',
+                                content: 'Кучеров Павел Сергеевич'
+                            }
+                        ]
                     }
                 },
                 { block: 'i-jquery', mods: { version: '1.8.3' } }

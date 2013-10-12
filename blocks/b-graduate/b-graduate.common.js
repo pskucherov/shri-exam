@@ -13,7 +13,6 @@ BEM.JSON.decl({name: 'b-graduate'}, {
                     var i
                         , graduate = result[name];
 
-
                     BEM.blocks['i-page'].setTitle(graduate.name);
 
                     ctx.content([
@@ -51,6 +50,10 @@ BEM.JSON.decl({name: 'b-graduate'}, {
                                     block: 'b-graduate',
                                     elem: 'about',
                                     content: graduate.about
+                                },
+                                {
+                                    block: 'b-fb-comments',
+                                    url: BEM.blocks['i-router'].get('matchers')[0]
                                 }
                             ]
                         }

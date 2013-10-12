@@ -22,6 +22,7 @@ block header {
             }
             items.push({
                 block: 'b-link',
+                mods: { 'mrgn': 'left' },
                 url: e.link,
                 content: {
                     block: 'b-menu-horiz',

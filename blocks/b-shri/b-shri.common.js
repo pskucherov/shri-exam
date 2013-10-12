@@ -22,6 +22,8 @@ BEM.JSON.decl({name: 'b-shri'}, {
                         }
                     ]);
 
+                }, function (error) {
+                    ctx.content(BEM.blocks['i-api-index'].printError(error));
                 })
         );
     }

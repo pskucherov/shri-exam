@@ -42,6 +42,24 @@ BEM.decl({block: 'i-api-index'}, null, {
             return result;
         });
 
+    },
+
+    printError: function (error) {
+        return {
+            block: 'b-wrapper-content',
+            elem: 'error',
+            content: {
+                block: 'b-error',
+                    content: [
+                    {
+                        content: 'Произошла ошибка (' + error.message + ')'
+                    },
+                    {
+                        content: 'Для перезагрузки страницы нажмите F5.'
+                    }
+                ]
+            }
+        }
     }
 
 

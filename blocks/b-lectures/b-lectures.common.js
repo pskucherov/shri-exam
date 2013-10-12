@@ -79,6 +79,8 @@ BEM.JSON.decl({name: 'b-lectures'}, {
                         }
                     ]);
 
+                }, function (error) {
+                    ctx.content(BEM.blocks['i-api-index'].printError(error));
                 })
         );
     }

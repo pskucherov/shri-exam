@@ -1,5 +1,6 @@
 ({
     shouldDeps: [
-        { elems: [ 'divlink', 'error' ] }
+        { elems: [ 'divlink', 'error' ] },
+        { mods: { faces: 'yes' } }
     ]
 })

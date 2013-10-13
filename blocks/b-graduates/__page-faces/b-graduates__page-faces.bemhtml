@@ -1,0 +1,66 @@
+block b-graduates {
+
+    elem page-faces {
+
+        content: {
+
+            var result = this.ctx.result
+                , i
+                , content = {
+                    block: 'b-graduates',
+                    mods: { posit: 'faces' },
+                    content: []
+                }
+                , graduate;
+
+
+            for ( i in result ) {
+
+                graduate = result[i];
+
+                content.content.push({
+
+                    block: 'b-wrapper-content',
+                    mods: { faces: 'yes' },
+                    content: [
+                        {
+                            block: 'b-graduates',
+                            elem: 'title',
+                            content: {
+                                block: 'b-link',
+                                url: '/graduates/' + i,
+                                content: graduate.name
+                            }
+                        },
+                        {
+                            block: 'b-link',
+                            url: '/graduates/' + i,
+                            content: {
+                            block: 'b-graduates',
+                                elem: 'avatara',
+                                attrs: { style: 'float:none' },
+                                photo: graduate['link_photo']
+                            }
+                        },
+                        {
+                            block: 'b-social',
+                            elem: 'style',
+                            attrs: { style: 'display:block' },
+                            items: {
+                                "link_facebook": graduate.link_facebook,
+                                "link_gihub": graduate.link_gihub,
+                                "link_yaru": graduate.link_yaru,
+                                "link_vk": graduate.link_vk
+                            }
+                        }
+
+                    ]
+
+                });
+            }
+
+            return content;
+        }
+    }
+
+}

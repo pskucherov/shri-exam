@@ -4,6 +4,7 @@ block b-selector-list-faces {
         content: {
             tag: 'img',
             attrs: {
+                border: 0,
                 src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAAd0SU1FB90KDBQuAQU9MF4AAAEvSURBVCjPjZKxSsNgFIW/E0VbcRBdDLgIuhWR5Bl8AbeuunXzAYpLN6EP4EM4O/gK+RdFFEEQh+CgFETUQY9LWpKSBM9078/5OPfnXlGjNE37tseSNm2/AyNJZ1mWuexbmAeTJDkBziWtFk/Lkg6AjTiOL/M8n3mjOXBF0gCYJUialsfAWtlfgYWWjHdUIkrqStpvhC1vY9q0V24WK8nWE2qFnxuTEb/ATwv82AzDJ3BjuzJ80b/afmiEsyz7Bk6hOrwk2R6HED5a95zn+X0cx1uSkiIVSbchhP68N2r428t0cknYntSZVDrJLrBreyjp0HZUrNuAbF8BQ+AuhDCZwWmajoCB7Y6kjm0Bnh6L7Wn9ZftH0oXtIyVJcg306o+qVi5C3yKgV77lf0jFMOt/vAx8C0fXbHAAAAAASUVORK5CYII='
             }
         }

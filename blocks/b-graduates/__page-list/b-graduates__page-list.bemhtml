@@ -50,9 +50,13 @@ block b-graduates {
                                 ]
                             },
                             {
-                                block: 'b-graduates',
-                                elem: 'avatara',
-                                photo: 'small_' + graduate['link_photo']
+                                block: 'b-link',
+                                url: '/graduates/' + i,
+                                content: {
+                                    block: 'b-graduates',
+                                    elem: 'avatara',
+                                    photo: 'small_' + graduate['link_photo']
+                                }
                             },
                             {
                                 block: 'b-graduates',

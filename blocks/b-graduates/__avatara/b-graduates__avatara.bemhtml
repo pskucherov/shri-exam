@@ -3,7 +3,7 @@ block b-graduates {
     elem avatara {
 
         tag: 'img',
-        attrs: { src: '/blocks/b-graduates/photos/' + this.ctx.photo }
+        attrs: { src: '/blocks/b-graduates/photos/' + this.ctx.photo, border: 0 }
 
     }
 }

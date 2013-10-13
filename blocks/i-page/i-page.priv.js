@@ -1,15 +1,17 @@
+/**
+ * Основная страница, в которую подгружаются остальные страницы
+ */
 BEM.decl('i-page', null, {
-    /**
-     * Default bemjson for all pages
-     *
-     * @param {Mixed} json
-     * 
-     * @return {Object} bemjson
-     */
+
     getPageJson: function (json) {
         return {
             block: 'b-page',
             title: 'Выпускной альбом',
+            head: [
+                //bem-node подключает IE и ставит тэг <!--[if gt IE 9]>
+                //поэтому подключил отдельно (подключить, чтобы собирались css файлы под IE пока не получилось)
+                { elem: 'css', url: '/pages/index/_index.css' }
+            ],
             //favicon: '/favicon.ico',
             content: [
                 {
@@ -47,8 +49,7 @@ BEM.decl('i-page', null, {
                             }
                         ]
                     }
-                },
-                { block: 'i-jquery', mods: { version: '1.8.3' } }
+                }
             ]
         }
     }

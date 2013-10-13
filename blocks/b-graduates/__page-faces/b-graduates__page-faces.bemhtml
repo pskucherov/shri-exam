@@ -1,3 +1,6 @@
+/**
+ * Вывод фотографий всех выпускников
+ */
 block b-graduates {
 
     elem page-faces {
@@ -26,6 +29,7 @@ block b-graduates {
                         {
                             block: 'b-graduates',
                             elem: 'title',
+                            mods: { faces: 'yes' },
                             content: {
                                 block: 'b-link',
                                 url: '/graduates/' + i,

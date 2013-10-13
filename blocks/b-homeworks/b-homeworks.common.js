@@ -1,10 +1,15 @@
+/**
+ * Перечисление домашних работ.
+ * Т.к. данные в json как могут быть заполнены, так и быть пустыми (для каждой домашки - своё)
+ * сначала проверяется существование данных, а только затем возвращаются
+ */
 BEM.JSON.decl({name: 'b-homeworks'}, {
 
     onBlock: function(ctx) {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].homeworks()
+            BEM.blocks['i-api-index'].getFile('homeworks')
                 .then(function (result) {
                     var i
                         , k
@@ -27,6 +32,7 @@ BEM.JSON.decl({name: 'b-homeworks'}, {
                         existingBlocks = [];
                         existingLinks = [];
 
+                        //Представление у данных одинаковое, только заголовки разные
                         for ( k in homework ) {
 
                             name = '';

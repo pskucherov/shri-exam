@@ -1,3 +1,8 @@
+/**
+ * Блок (страница) списка выпускников
+ * В данном файле по флагу определяется отображать список или фотографии,
+ * затем данные передаются в нужный шаблон
+ */
 BEM.JSON.decl({name: 'b-graduates'}, {
 
     onBlock: function(ctx) {
@@ -6,7 +11,7 @@ BEM.JSON.decl({name: 'b-graduates'}, {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].graduates()
+            BEM.blocks['i-api-index'].getFile('graduates')
                 .then(function (result) {
 
                     BEM.blocks['i-page'].setTitle('Выпускники');

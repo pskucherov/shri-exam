@@ -1,3 +1,6 @@
+/**
+ * Блок (страница) выпускника
+ */
 BEM.JSON.decl({name: 'b-graduate'}, {
 
     onBlock: function(ctx) {
@@ -7,7 +10,7 @@ BEM.JSON.decl({name: 'b-graduate'}, {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].graduates()
+            BEM.blocks['i-api-index'].getFile('graduates')
                 .then(function (result) {
 
                     var i

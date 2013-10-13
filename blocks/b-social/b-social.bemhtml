@@ -1,3 +1,6 @@
+/**
+ * Формирование блока ссылок на социальные сети.
+ */
 block b-social {
 
     elem style {
@@ -38,7 +41,7 @@ block b-social {
                                 url: link,
                                 content: {
                                     tag: 'img',
-                                    attrs: { src: '/blocks/b-social/icons/' + k + '.png' }
+                                    attrs: { src: '/blocks/b-social/icons/' + k + '.png', border: 0 }
                                 }
                             }
                         });

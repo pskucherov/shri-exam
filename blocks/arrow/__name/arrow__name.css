@@ -1,0 +1,9 @@
+.arrow__name
+{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2em;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: #000;
+}

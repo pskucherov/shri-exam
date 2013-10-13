@@ -1,0 +1,51 @@
+/**
+ * Блок комментариев от фейсбука
+ */
+block b-fb-comments {
+
+    js: true,
+    content: {
+        var content;
+
+        if ( typeof document !== 'undefined' ) {
+
+            /**
+             * Модифицированный скрипт FB-comments
+             * выполнится при подгрузке страницы
+             * Т.к. подгружаемый скрипт FB выполняется только тогда, когда не существует window.FB
+             * удаляем скрипт и переменную, после чего подгружаем скрипт комментариев заново.
+             */
+            (function(d, s, id) {
+                var js, fjs;
+                if (d.getElementById(id)) {
+                    $('#' + id).remove();
+                    delete window.FB;
+                }
+                fjs = d.getElementsByTagName(s)[0];
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=739739559385883";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+        }
+
+
+        content = [
+            {
+                block: 'fb-root',
+                attrs: { id: 'fb-root' }
+            },
+            {
+                block: 'fb-comments',
+                attrs: {
+                    'data-href': this.ctx.url,
+                    'data-numposts': 5,
+                    'data-width': 760
+                }
+            }
+        ];
+
+        return content;
+    }
+
+}

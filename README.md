@@ -1,33 +1,28 @@
-This is the test project that used bem-node
+Экзаменационное задание для ШРИ
 
-Getting Started
+Выпускной альбом
 ---------------
 
-checkout the project
+Установка
 
-    git clone https://github.com/wtfil/bem-node-test.git
-    cd bem-node-test
+    git clone https://github.com/phpprog/shri-exam.git
+    cd shri-exam
+    npm i
 
-install npm dependencies
+В корне лежит папка json - в ней файлы с данными для сайта, которые должны подгружаться с удалённого сервера.
+Путь к серверу/папке прописывается в /blocks/i-api-request/i-api-request.priv.js
 
-    npm install
 
-Build project
+Сборка и запуск проекта
 ---------------
-
-You should run this command in the root of project
-
-after creating / removing  of new blocks / files / dependencies
 
     ./node_modules/.bin/enb make
-
-
-Run
----------------
-
-In the root of project
-
     node pages/index/index.server.js --socket 3000
 
+Запускать по адресу http://127.0.0.1:3000
 
-Open http://127.0.0.1:3000
+
+Демонстрационная версия
+---------------
+
+Здесь: http://t1.kiev.ua:3000

@@ -1,3 +1,7 @@
+/**
+ * Страница лекции
+ * Данные из json сначала проверяются на наличие, т.к. для некоторых лекций нет видео
+ */
 BEM.JSON.decl({name: 'b-lecture'}, {
 
     onBlock: function(ctx) {
@@ -74,10 +78,18 @@ BEM.JSON.decl({name: 'b-lecture'}, {
                         },
                         {
                             block: 'b-wrapper-content',
-                            content: existingBlocks
+                            content: [
+                                existingBlocks,
+                                {
+                                    block: 'b-fb-comments',
+                                    url: BEM.blocks['i-router'].get('matchers')[0]
+                                }
+                            ]
                         }
                     ]);
 
+                }, function (error) {
+                    ctx.content(BEM.blocks['i-api-index'].printError(error));
                 })
         );
     }

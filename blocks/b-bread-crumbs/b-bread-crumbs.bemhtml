@@ -1,3 +1,6 @@
+/**
+ * Заготовка для списка ссылок
+ */
 block b-bread-crumbs {
 
     content: [

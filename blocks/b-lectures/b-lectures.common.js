@@ -1,3 +1,7 @@
+/**
+ * Страница списка лекций
+ * Проверяется на наличие только превью видео, т.к. все остальные данные гарантированно есть
+ */
 BEM.JSON.decl({name: 'b-lectures'}, {
 
     onBlock: function(ctx) {
@@ -79,6 +83,8 @@ BEM.JSON.decl({name: 'b-lectures'}, {
                         }
                     ]);
 
+                }, function (error) {
+                    ctx.content(BEM.blocks['i-api-index'].printError(error));
                 })
         );
     }

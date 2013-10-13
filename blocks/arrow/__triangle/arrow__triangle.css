@@ -1,0 +1,19 @@
+.arrow__triangle
+{
+    font: 0/0 a;
+    position: absolute;
+
+    top: 50%;
+    right: -1px;
+
+    width: 0;
+    height: 0;
+
+    margin-top: -35px;
+
+    border: solid #fff;
+    border-width: 35px 1px 35px 18px;
+    border-left-color: transparent;
+    -webkit-transform: rotate(360deg);
+    -moz-border-end-style: dotted;
+}

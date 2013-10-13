@@ -1,3 +1,6 @@
+/**
+ * Шаблон пути, по которому будет отдаваться страница лекции
+ */
 BEM.blocks['i-router'].define(/\/lectures\/([^\/]+)$/, 'i-page-lecture');
 BEM.decl({block: 'i-page-lecture', baseBlock: 'i-page'}, null, {
 

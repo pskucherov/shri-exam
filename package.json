@@ -1,6 +1,6 @@
 {
-    "name": "bem-node-test",
-    "version": "0.0.1",
+    "name": "shri-exam",
+    "version": "0.2.0",
     "description": "",
     "keywords": [
         "bem",
@@ -8,7 +8,7 @@
         "bem-node"
     ],
     "author": {
-        "name": "Evgeniy Filatov"
+        "name": "Kucherov Pavel"
     },
     "dependencies": {
         "bem-node": "*",

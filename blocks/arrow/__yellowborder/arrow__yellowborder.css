@@ -1,0 +1,15 @@
+.arrow__yellowborder
+{
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    margin-right: 12px;
+
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+    background: #fd0;
+    background-image: -webkit-linear-gradient(top right,#ffdb4c 0,#fc0 100%);
+    background-image: -moz-linear-gradien;
+}

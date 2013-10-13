@@ -1,0 +1,7 @@
+.b-selector-list-faces__list_selected_yes
+{
+    background-color: #b5b5b5;
+    background-image: linear-gradient(to bottom, #F2F2F2, #b5b5b5);
+    background-repeat: repeat-x;
+    color: #333333;
+}

@@ -18,7 +18,13 @@ BEM.JSON.decl({name: 'b-graduates'}, {
                         },*/
                         {
                             block: 'b-title',
-                            content: 'Выпускники'
+                            content: [
+                                {
+                                    block: 'b-selector-list-faces',
+                                    faces: faceFlag
+                                },
+                                'Выпускники'
+                            ]
                         },
                         {
                             block: 'b-graduates',

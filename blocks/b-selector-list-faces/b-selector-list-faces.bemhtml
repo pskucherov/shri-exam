@@ -1,0 +1,35 @@
+block b-selector-list-faces {
+
+    content: {
+
+        var content = [
+            {
+                block: 'b-link',
+                url: '/graduates/',
+                content: {
+                    block: 'b-selector-list-faces',
+                    elem: 'list'
+                }
+            },
+            {
+                block: 'b-link',
+                url: '/graduates/@faces',
+                content: {
+                    block: 'b-selector-list-faces',
+                    elem: 'faces'
+                }
+            }
+        ]
+            , faces = this.ctx.faces;
+
+        if ( faces ) {
+            faces = 1;
+        } else {
+            faces = 0;
+        }
+        content[faces].content.mods = { selected: 'yes' };
+
+        return content;
+    }
+
+}

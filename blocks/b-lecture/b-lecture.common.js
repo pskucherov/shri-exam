@@ -74,7 +74,13 @@ BEM.JSON.decl({name: 'b-lecture'}, {
                         },
                         {
                             block: 'b-wrapper-content',
-                            content: existingBlocks
+                            content: [
+                                existingBlocks,
+                                {
+                                    block: 'b-fb-comments',
+                                    url: BEM.blocks['i-router'].get('matchers')[0]
+                                }
+                            ]
                         }
                     ]);
 

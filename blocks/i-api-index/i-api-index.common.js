@@ -44,6 +44,20 @@ BEM.decl({block: 'i-api-index'}, null, {
 
     },
 
+    homeworks: function () {
+
+
+        if (typeof BEM.blocks['b-content'] !== 'undefined') {
+            BEM.blocks['b-content'].setWait();
+        }
+
+        return BEM.blocks['i-api-request'].get('homeworks.json').then(function(result) {
+            return result;
+        });
+
+
+    },
+
     printError: function (error) {
         return {
             block: 'b-wrapper-content',

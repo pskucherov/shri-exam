@@ -20,7 +20,8 @@ BEM.decl('i-page', null, {
                             links: [
                                 { link: '/', content: 'О школе' },
                                 { link: 'graduates', content: 'Выпускники' },
-                                { link: 'lectures', content: 'Лекции' }
+                                { link: 'lectures', content: 'Лекции' },
+                                { link: 'homeworks', content: 'Мои домашки' }
                             ]
                         },
                         {

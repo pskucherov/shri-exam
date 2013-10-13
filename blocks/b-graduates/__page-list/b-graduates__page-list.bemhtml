@@ -1,3 +1,6 @@
+/**
+ * Вывод выпускников списком
+ */
 block b-graduates {
 
     elem page-list {

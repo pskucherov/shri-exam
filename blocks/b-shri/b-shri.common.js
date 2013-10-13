@@ -1,3 +1,6 @@
+/**
+ * Страница о ШРИ
+ */
 BEM.JSON.decl({name: 'b-shri'}, {
 
     onBlock: function(ctx) {

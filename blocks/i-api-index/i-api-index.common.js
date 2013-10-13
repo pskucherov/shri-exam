@@ -1,5 +1,13 @@
+/**
+ * Обработчик запросов при загрузке страниц
+ */
 BEM.decl({block: 'i-api-index'}, null, {
 
+    /**
+     * Устанавливает крутилку в контент страницы, запрашивает файл.json и возвращает результат
+     * @param name {string} - название запрашиваемого файла
+     * @returns {*}
+     */
     getFile: function (name) {
         if (typeof BEM.blocks['b-content'] !== 'undefined') {
             BEM.blocks['b-content'].setWait();
@@ -12,6 +20,11 @@ BEM.decl({block: 'i-api-index'}, null, {
             });
     },
 
+    /**
+     * Тоже, что и getFile, но т.к. лекции и лекторы неразрывно связаны - данная функция возвращает
+     * сразу оба результата
+     * @returns {*}
+     */
     lectures: function () {
 
         if (typeof BEM.blocks['b-content'] !== 'undefined') {
@@ -27,6 +40,11 @@ BEM.decl({block: 'i-api-index'}, null, {
             });
     },
 
+    /**
+     * Выводит сообщение об ошибке, если страница не может быть открыта
+     * @param error - параметр, который возвращает fallback
+     * @returns {{block: string, elem: string, content: {block: string, content: Array}}}
+     */
     printError: function (error) {
         return {
             block: 'b-wrapper-content',

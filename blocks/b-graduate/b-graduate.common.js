@@ -1,3 +1,6 @@
+/**
+ * Блок (страница) выпускника
+ */
 BEM.JSON.decl({name: 'b-graduate'}, {
 
     onBlock: function(ctx) {

@@ -1,3 +1,6 @@
+/**
+ * Превью видео + градиент + наложенная кнопка play
+ */
 block b-player-preview {
 
     content: [

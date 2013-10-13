@@ -1,3 +1,6 @@
+/**
+ * Вывод фотографий всех выпускников
+ */
 block b-graduates {
 
     elem page-faces {

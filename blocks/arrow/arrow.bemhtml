@@ -1,3 +1,6 @@
+/**
+ * Жёлтая стрелка для шапки сайта
+ */
 block arrow {
     content: {
         elem: 'yellowborder',

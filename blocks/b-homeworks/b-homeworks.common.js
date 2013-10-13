@@ -4,7 +4,7 @@ BEM.JSON.decl({name: 'b-homeworks'}, {
 
         ctx.defer(
 
-            BEM.blocks['i-api-index'].homeworks()
+            BEM.blocks['i-api-index'].getFile('homeworks')
                 .then(function (result) {
                     var i
                         , k

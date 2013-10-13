@@ -1,17 +1,13 @@
 BEM.decl({block: 'i-api-index'}, null, {
 
-    index: function () {
-
+    getFile: function (name) {
         if (typeof BEM.blocks['b-content'] !== 'undefined') {
             BEM.blocks['b-content'].setWait();
         }
 
         return BEM.blocks['i-api-request']
-            .get('index.json')
+            .get(name + '.json')
             .then(function (result) {
-                /**
-                 * @see http://t1.kiev.ua/json/index.json
-                 */
                 return result;
             });
     },
@@ -29,33 +25,6 @@ BEM.decl({block: 'i-api-index'}, null, {
                     return { lectures: result1, lecturers: result2 };
                 });
             });
-    },
-
-    graduates: function () {
-
-
-        if (typeof BEM.blocks['b-content'] !== 'undefined') {
-            BEM.blocks['b-content'].setWait();
-        }
-
-        return BEM.blocks['i-api-request'].get('graduates.json').then(function(result) {
-            return result;
-        });
-
-    },
-
-    homeworks: function () {
-
-
-        if (typeof BEM.blocks['b-content'] !== 'undefined') {
-            BEM.blocks['b-content'].setWait();
-        }
-
-        return BEM.blocks['i-api-request'].get('homeworks.json').then(function(result) {
-            return result;
-        });
-
-
     },
 
     printError: function (error) {
